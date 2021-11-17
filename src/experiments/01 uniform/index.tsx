@@ -4,7 +4,7 @@ import fragmentShader from "./shaders/fragment.glsl";
 import { DoubleSide } from "three";
 import Experiment from "../../components/experiment";
 
-const Experiment00: VFC = () => {
+const UniformExperiment: VFC = () => {
   return (
     <Experiment>
       <mesh>
@@ -19,4 +19,4 @@ const Experiment00: VFC = () => {
   );
 };
 
-export default Experiment00;
+export default UniformExperiment;

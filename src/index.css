@@ -16,3 +16,14 @@ body {
   bottom: 0;
   outline: none;
 }
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.nav ul li {
+  margin: 6px;
+}

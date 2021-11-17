@@ -1,15 +1,17 @@
 import { VFC } from "react";
-import { Vector3 } from "three";
-import { PerspectiveCamera, OrbitControls } from "@react-three/drei";
+import { Routes, Route } from "react-router-dom";
+
 import Experiment00 from "./00";
+import UniformExperiment from "./01 uniform";
+
+import navLinks from "../nav-links.json";
 
 const Experiments: VFC = () => {
   return (
-    <>
-      <Experiment00 />
-      <PerspectiveCamera makeDefault position={new Vector3(0, 0, 1.2)} />
-      <OrbitControls makeDefault />
-    </>
+    <Routes>
+      <Route path="/" element={<Experiment00 />} />
+      <Route path={navLinks.uniform} element={<UniformExperiment />} />
+    </Routes>
   );
 };
 
